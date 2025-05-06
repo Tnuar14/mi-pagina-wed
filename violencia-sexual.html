@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Violencia Sexual contra la Mujer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      background: #4a148c;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    article {
+      background: #fff;
+      padding: 30px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4a148c;
+      margin-top: 0;
+    }
+
+    .text-image {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 30px 0;
+      align-items: center;
+    }
+
+    .text-image img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    #btn-arriba {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #e0324c;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      display: none;
+      z-index: 1000;
+    }
+
+    .back-btn {
+      position: fixed;
+      bottom: 25px;
+      left: 25px;
+      z-index: 1000;
+    }
+
+    .back-btn button {
+      padding: 12px 24px;
+      background-color: #4a148c;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 16px;
+    }
+
+    .back-btn button:hover {
+      background-color: #6a1b9a;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .text-image {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Violencia contra la Mujer</h1>
+    <nav>
+      <a href="#">SEXUAL</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <article>
+      <h2>¿Qué es la Violencia Sexual contra la Mujer?</h2>
+      <div class="text-image">
+        <div class="text">
+          <p>La violencia sexual es cualquier acto sexual forzado, intento de obtener un acto sexual, comentarios o insinuaciones sexuales no deseadas, o actos para traficar con la sexualidad de una persona mediante coerción.</p>
+          <p>Incluye violación, abuso sexual infantil, acoso sexual y explotación. Es una violación grave de los derechos humanos y puede tener consecuencias devastadoras para la salud física, emocional y social de las víctimas.</p>
+      </div>
+
+        <div class="text">
+          <p>Muchas veces, las víctimas no denuncian por miedo, culpa o vergüenza. Es fundamental brindar un entorno seguro y comprensivo para escuchar, apoyar y acompañar a quienes han sufrido este tipo de violencia.</p>
+          <p>La intervención temprana, el acceso a servicios médicos, psicológicos y legales, y la sensibilización social son claves para la recuperación y prevención.</p>
+        </div>
+      </div>
+
+      <h2>Señales y consecuencias de la violencia sexual</h2>
+      <p>Las víctimas pueden mostrar miedo al contacto físico, ansiedad, insomnio, retraimiento, sentimientos de culpa o vergüenza, y síntomas de trastorno de estrés postraumático (TEPT).</p>
+
+      <h2>¿Cómo prevenir y actuar?</h2>
+      <div class="text-image">
+        <div class="text">
+          <p>Es vital educar sobre el consentimiento, romper los mitos que culpabilizan a la víctima y promover relaciones basadas en el respeto. El consentimiento debe ser claro, libre y reversible.</p>
+          <p>Denunciar, acompañar sin juzgar y exigir justicia son pasos fundamentales para erradicar esta violencia. Las leyes deben proteger y el sistema debe garantizar atención digna a las sobrevivientes.</p>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhbB5KdK2NWbVoqHylGC22HNgm776zFSKZhg&s" alt="Educación sobre consentimiento">
+      </div>
+    </article>
+  </div>
+
+  <div class="back-btn">
+    <a href="violencia asi la mujer 1.html">
+      <button>← Volver al inicio</button>
+    </a>
+  </div>
+
+  <button id="btn-arriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+  <script>
+    const btnArriba = document.getElementById("btn-arriba");
+    window.addEventListener("scroll", () => {
+      btnArriba.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+  </script>
+<footer style="background-color: #222; color: #fff; padding: 20px; text-align: center;">
+  <p>&copy; 2025 Conciencia Contra la Violencia. Todos los derechos reservados.</p>
+  <p>Contacto: <a href="mailto:info@concienciaviolencia.org" style="color: #bbb;">info@concienciaviolencia.org</a></p>
+  <p>
+    <a href="/aviso-legal.html" style="color: #bbb; margin: 0 10px;">Aviso legal</a> |
+    <a href="/politica-privacidad.html" style="color: #bbb; margin: 0 10px;">Política de privacidad</a> |
+    <a href="/recursos.html" style="color: #bbb; margin: 0 10px;">Recursos de ayuda</a>
+  </p>
+</footer>
+
+</body>
+</html>
+

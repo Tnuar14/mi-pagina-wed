@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Violencia Económica contra la Mujer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      background: #4a148c;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    article {
+      background: #fff;
+      padding: 30px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #4a148c;
+      margin-top: 0;
+    }
+
+    .text-image {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 30px 0;
+      align-items: center;
+    }
+
+    .text-image img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    #btn-arriba {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #e0324c;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      display: none;
+      z-index: 1000;
+    }
+
+    .back-btn {
+      position: fixed;
+      bottom: 25px;
+      left: 25px;
+      z-index: 1000;
+    }
+
+    .back-btn button {
+      padding: 12px 24px;
+      background-color: #4a148c;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 16px;
+    }
+
+    .back-btn button:hover {
+      background-color: #6a1b9a;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .text-image {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Violencia contra la Mujer</h1>
+    <nav>
+      <a href="#">ECONOMICA</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <article>
+      <h2>¿Qué es la Violencia Económica contra la Mujer?</h2>
+      <div class="text-image">
+        <div class="text">
+          <p>La violencia económica es una forma de abuso en la que el agresor controla los recursos financieros de la víctima, limitando su acceso al dinero y a los bienes, y controlando sus decisiones económicas.</p>
+          <p>Esto puede incluir impedir que la víctima trabaje, controlar su salario, negarle el acceso a cuentas bancarias, y acumular deudas a su nombre. Es una forma de mantener el poder y el control en la relación.</p>
+        </div>
+    
+             <div class="text">
+          <p>La violencia económica puede tener graves consecuencias, como la dependencia financiera, la pobreza y la imposibilidad de dejar una relación abusiva.</p>
+          <p>Es crucial que las mujeres tengan acceso a recursos económicos y a la educación financiera para poder tomar decisiones independientes y protegerse de este tipo de abuso.</p>
+        </div>
+      </div>
+
+      <h2>Señales y consecuencias de la violencia económica</h2>
+      <p>Las víctimas pueden experimentar estrés, ansiedad, baja autoestima y sentimientos de desesperanza. También pueden enfrentar dificultades para cubrir necesidades básicas y las de sus hijos.</p>
+
+      <h2>¿Cómo prevenir y actuar?</h2>
+      <div class="text-image">
+        <div class="text">
+          <p>La educación financiera y el acceso a recursos económicos son esenciales para prevenir la violencia económica. Las mujeres deben conocer sus derechos y tener acceso a cuentas bancarias y oportunidades laborales.</p>
+          <p>Es importante denunciar estos actos y buscar apoyo en organizaciones que ofrezcan asesoría legal y financiera. La sociedad debe promover la igualdad de género y condenar cualquier forma de violencia.</p>
+          </div>
+    </article>
+  </div>
+
+  <div class="back-btn">
+    <a href="violencia asi la mujer 1.html">
+      <button>← Volver al inicio</button>
+    </a>
+  </div>
+
+  <button id="btn-arriba" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+  <script>
+    const btnArriba = document.getElementById("btn-arriba");
+    window.addEventListener("scroll", () => {
+      btnArriba.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+  </script>
+<footer style="background-color: #222; color: #fff; padding: 20px; text-align: center;">
+  <p>&copy; 2025 Conciencia Contra la Violencia. Todos los derechos reservados.</p>
+  <p>Contacto: <a href="mailto:info@concienciaviolencia.org" style="color: #bbb;">info@concienciaviolencia.org</a></p>
+  <p>
+    <a href="/aviso-legal.html" style="color: #bbb; margin: 0 10px;">Aviso legal</a> |
+    <a href="/politica-privacidad.html" style="color: #bbb; margin: 0 10px;">Política de privacidad</a> |
+    <a href="/recursos.html" style="color: #bbb; margin: 0 10px;">Recursos de ayuda</a>
+  </p>
+</footer>
+
+</body>
+</html>
+
